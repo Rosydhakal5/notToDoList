@@ -22,4 +22,7 @@ let newTask = document.createElement("li");
 newTask.innerHTML = `${taskInput.value} -${hourInput.value}hrs`
 //appending it in Entry List
 entryList.appendChild(newTask);
+//setting up new values to empty to get another input 
+taskInput.value = ''
+hourInput.value = ''
 }
