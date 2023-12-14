@@ -10,5 +10,11 @@ function addTask(){
     //used query selctor to select the totalHours
     let totalHours = document.querySelector("#totalHours")
 
+    if(taskInput.value.trim() === ""|| hourInput.value = '' || isNaN(hourInput.value)){
+        alert("Please enter valid input");
+        return;
+    }
+
+
 
 }
