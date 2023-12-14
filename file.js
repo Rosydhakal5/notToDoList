@@ -10,11 +10,16 @@ function addTask(){
     //used query selctor to select the totalHours
     let totalHours = document.querySelector("#totalHours")
 
-    if(taskInput.value.trim() === ""|| hourInput.value = '' || isNaN(hourInput.value)){
+    if(taskInput.value.trim() === "" || hourInput.value === '' || isNaN(hourInput.value)){
         alert("Please enter valid input");
         return;
     }
 
 
-
+//Creating newTask 
+let newTask = document.createElement("li");
+//getting input values from the user and storing it in newTask 
+newTask.innerHTML = `${taskInput.value} -${hourInput.value}hrs`
+//appending it in Entry List
+entryList.appendChild(newTask);
 }
